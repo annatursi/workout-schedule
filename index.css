@@ -10,6 +10,8 @@ body {  font-family: Georgia !important;  color: #303030 !important;  width:100%
 .jumbotron h5{    font-size: 15px !important;    font-style: oblique;}
 /* aliceblue, #ACD3E9 #C2DAEE #CDE0F1 #D8E7F4 #E8F1F8 */
 .white{    padding: 30px 0px 30px 0px;    background:white !important;}
+.header{
+  background: #ACD3E9 !important;}
 /* OTHER EDITS */
 hr{    border-color: #666 !important;}
 p{    font-size: 18px !important;}.center{    text-align: center !important;}
