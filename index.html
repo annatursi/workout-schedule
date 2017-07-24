@@ -16,6 +16,14 @@
   </head>
   
   <body> 
+    <script>
+      date = new Date(); 
+    </script>
+    <div class="jumbotron"><div class="header"><div class="container">
+      <h1>Today is: </h1>
+      <h1 id=”date”></h1>
+      document.getElementById("date").innerHTML=date;
+    </div></div></div>
       <p id="su" style="display:none">Off Day!</p>
     <!--monday-->
       <p id="m13" style="display:none">m13</p>
