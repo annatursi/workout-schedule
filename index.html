@@ -20,7 +20,10 @@
       <h1 id="date"></h1>
     <script>
       today="Today is: "
-      document.getElementById("date").innerHTML= today.concat(Date());
+      var d = new Date();
+      d = d.toDateString();
+      today = today.concat(d)
+      document.getElementById("date").innerHTML = today;
     </script>
     </div></div></div>
       <p id="su" style="display:none">Off Day!</p>
