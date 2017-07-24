@@ -7,6 +7,11 @@ var mymonth=today_date.getMonth()+1    
 var mytoday=today_date.getDate()    
 document.write(myyear+"/"+mymonth+"/"+mytoday)
 }
+function decideWeek()
+{
+  week="Weeks 1&3"
+  return week;
+}
 function getTimeRemaining(endtime) 
 {  
   var t = Date.parse(endtime) - Date.parse(new Date()); 
