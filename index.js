@@ -1,6 +1,18 @@
 function decideWeek()
 {
-var week="Weeks 1&3";
+  if( ((month==8)&&((day>=21)&&(day<=25)) || ((month==9)&&((day>=4)&&(day<=8)))
+        { var week= "Weeks 1 & 3";}
+  if( ((month==8)&&((day>=28)&&(day<=31))) || ((month==9)&&(day==1)) || ((month==9)&&((day>=11)&&(day<=15)))
+        { var week= "Weeks 2 & 4"}
+  if( ((month==8)&&((day>=21)&&(day<=25))) || ((month==9)&&(day>=4&&day<=8))
+        { var week= "Weeks 5 & 7";}
+  if( ((month==8)&&(day>=21&&day<=25)) || ((month==9)&&(day>=4&&day<=8))
+        { var week= "Weeks 6 & 8";}
+  if( ((month==8)&&(day>=21&&day<=25)) || ((month==9)&&(day>=4&&day<=8))
+        { var week= "Weeks 9 & 11";}
+  if( ((month==8)&&(day>=21&&day<=25)) || ((month==9)&&(day>=4&&day<=8))
+        { var week= "Weeks 10 & 12";}
+  else{ var week="Day off!!";}
   return week;
 }
 function getTimeRemaining(endtime) 
