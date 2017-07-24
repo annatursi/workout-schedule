@@ -1,1 +1,43 @@
-
+body {  font-family: Georgia !important;  color: #303030 !important;  width:100% !important;  line-height: 2 !important;}
+/* NAVBAR EDITS */
+.dropdown-toggle .dropdown-menu {  position: static;  display: block;}
+.theme-showcase > p > .btn {  margin: 5px 0;}
+.theme-showcase .navbar .container {  width: auto;}
+.navbar-brand {    color: #303030 !important;
+}
+.activetab{    background-color: inherit;    color: #202020 !important;     font-weight: 600;}
+.navbar .activebar{    color: #202020 !important;   }
+button{    border-color: transparent !important;}
+/* HOME EDITS */
+.home{    font-weight: 600;    color: #515C65;}
+.header{    padding: 70px 0px 30px 0px;    background: #D8E7F4 !important;    text-align: center;}
+.explain{    padding: 30px 0px 30px 0px;    background: #D8E7F4 !important;    text-align: center !important;}
+/* JUMBOTRON EDITS */
+.jumbotron{    margin: 0px !important;    padding: 0px !important;}
+.jumbotron h1{    font-size: 35px !important;    font-weight: 600;    text-align: center;    padding: 15px 20px 40px 20px;
+}
+.jumbotron h2{    font-variant-caps: all-petite-caps;    padding: 10px 20px 10px 20px;    font-weight: 600;}
+.jumbotron h3{    font-size: 20px;    padding: 30px 20px 30px 20px;}
+.jumbotron h4{    font-size: 50px !important;    padding: 20px 0px 20px 0px;}
+.jumbotron h5{    font-size: 15px !important;    font-style: oblique;}
+/* aliceblue, #ACD3E9 #C2DAEE #CDE0F1 #D8E7F4 #E8F1F8 */
+.white{    padding: 30px 0px 30px 0px;    background:white !important;}/* EMAIL EDITS */
+.link{    color: inherit;}
+a.link:hover {    color: black;    font-weight: 600;    text-decoration: none;}a.link:visited {    color: black;    font-weight: 400;    text-decoration: none;}
+/* RATES EDITS */
+ul{    list-style: none;}.rates p{    font-size: 8pt !important;}
+/* BOTTOM PARTITION */
+.bottom{    margin-top: 30px;    margin-bottom: 50px;    text-align: center;}
+.bottom h2{    font-size: 150% !important;}
+.bottom h3{    font-size: 18px !important;    padding-bottom: 20px !important;    border-bottom: 1px solid #333 !important;    font-weight: 400 !important;}
+.glyphicon{    padding: 10px;    color: #333;}
+/* OTHER EDITS */
+hr{    border-color: #666 !important;}
+p{    font-size: 18px !important;}.center{    text-align: center !important;}
+.btn{    border-color: darkgray !important;    margin: 20px;}
+iframe{    width: 100%;    height: 450px;}
+.row p{    font-size: 16px !important;}
+svg{  height: 8%;  width: 8%;}
+.search{  padding-top: 70px !important;}
+.title{  padding-bottom: 10px !important;  font-size: 20px !important;}
+img{  padding: 20px 20px 20px 20px;}
