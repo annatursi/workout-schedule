@@ -17,10 +17,10 @@
   
   <body> 
     <div class="jumbotron"><div class="header"><div class="container">
-      <h1>Today is: </h1>
       <h1 id="date"></h1>
     <script>
-      document.getElementById("date").innerHTML= Date();
+      today="Today is: "
+      document.getElementById("date").innerHTML= today.concat(Date());
     </script>
     </div></div></div>
       <p id="su" style="display:none">Off Day!</p>
