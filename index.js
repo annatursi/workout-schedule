@@ -1,5 +1,9 @@
 function decideWeek()
 {
+  month = new Date().getMonth()+1;
+  date = new Date().getDate();
+  day = new Date().getDay()+1;
+  
   if(  ((month==8) && ((day>=21)&&(day<=25)) || ((month==9) && ((day>=4)&&(day<=8)))))
         { var week= "Weeks 1 & 3";}
   if( ((month==8)&&((day>=28)&&(day<=31))) || ((month==9)&&(day==1)) || ((month==9)&&((day>=11)&&(day<=15)))
