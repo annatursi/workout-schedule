@@ -1,17 +1,5 @@
 body {  font-family: Georgia !important;  color: #303030 !important;  width:100% !important;  line-height: 2 !important;}
-/* NAVBAR EDITS */
-.dropdown-toggle .dropdown-menu {  position: static;  display: block;}
-.theme-showcase > p > .btn {  margin: 5px 0;}
-.theme-showcase .navbar .container {  width: auto;}
-.navbar-brand {    color: #303030 !important;
-}
-.activetab{    background-color: inherit;    color: #202020 !important;     font-weight: 600;}
-.navbar .activebar{    color: #202020 !important;   }
-button{    border-color: transparent !important;}
-/* HOME EDITS */
-.home{    font-weight: 600;    color: #515C65;}
-.header{    padding: 70px 0px 30px 0px;    background: #D8E7F4 !important;    text-align: center;}
-.explain{    padding: 30px 0px 30px 0px;    background: #D8E7F4 !important;    text-align: center !important;}
+
 /* JUMBOTRON EDITS */
 .jumbotron{    margin: 0px !important;    padding: 0px !important;}
 .jumbotron h1{    font-size: 35px !important;    font-weight: 600;    text-align: center;    padding: 15px 20px 40px 20px;
