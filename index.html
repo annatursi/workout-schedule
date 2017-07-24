@@ -17,7 +17,7 @@
   
   <body> 
     <nav class="navbar"><ul>
-      <li id="su">Sunday</li>
+      <li>Sunday</li>
       <li id="m">Monday</li>
       <li id="t">Tuesday</li>
       <li id="w">Wednesday</li>
@@ -28,7 +28,7 @@
     <p>This week is week *****</p>
     <button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me!</button>
     <!--sunday-->
-      <p id="sunday" style="display:none">Off Day!</p>
+      <p id="su" style="display:none">Off Day!</p>
     <!--monday-->
       <p id="m13" style="display:none">m13</p>
       <p id="m24" style="display:none">m24</p>
@@ -80,6 +80,7 @@ if( ((month==8)&&(day>=21&&day<=25)) || ((month==9)&&(day>=4&&day<=8))
 if( ((month==8)&&(day>=21&&day<=25)) || ((month==9)&&(day>=4&&day<=8))
         { week= “1012”;}
 decide=today.concat(week);
+decide="su";
 document.getElementById(decide).style.display='block';
 </script>
     </body>
