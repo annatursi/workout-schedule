@@ -9,7 +9,7 @@ document.write(myyear+"/"+mymonth+"/"+mytoday)
 }
 function decideWeek()
 {
-var week="Weeks 1&3"
+var week="Weeks 1&3";
   return week;
 }
 function getTimeRemaining(endtime) 
