@@ -1,28 +1,49 @@
-body {  font-family: Georgia !important;  color: #303030 !important;  width:100% !important;  line-height: 2 !important;}
-
-/* JUMBOTRON EDITS */
-.jumbotron{    margin: 0px !important;    padding: 0px !important;}
-.jumbotron h1{    font-size: 35px !important;    font-weight: 600;    text-align: center;    padding: 15px 20px 40px 20px;
+body{
+    font: "Proxima Nova",Georgia,sans-serif;
 }
-.jumbotron h2{    font-variant-caps: all-petite-caps;    padding: 10px 20px 10px 20px;    font-weight: 600;}
-.jumbotron h3{    font-size: 20px;    padding: 30px 20px 30px 20px;}
-.jumbotron h4{    font-size: 50px !important;    padding: 20px 0px 20px 0px;}
-.jumbotron h5{    font-size: 15px !important;    font-style: oblique;}
-/* aliceblue, #ACD3E9 #C2DAEE #CDE0F1 #D8E7F4 #E8F1F8 */
-.white{    padding: 30px 0px 30px 0px;    background:white !important;}
+.jumbotron{
+    margin: 0px;
+    padding: 0px;
+}
 .header{
-  background: #ACD3E9 !important;}
-/* OTHER EDITS */
-hr{    border-color: #666 !important;}
-p{    font-size: 18px !important;}.center{    text-align: center !important;}
-.btn{    border-color: darkgray !important;    margin: 20px;}
-iframe{    width: 100%;    height: 450px;}
-.row p{    font-size: 16px !important;}
-.search{  padding-top: 70px !important;}
-.title{  padding-bottom: 10px !important;  font-size: 20px !important;}
-
-h1{  color: #396;  font-weight: 100;  font-size: 40px;  margin: 40px 0px 20px;}
-#clockdiv{    font-family: sans-serif;    color: #fff;    display: inline-block;    font-weight: 100;    text-align: center;    font-size: 30px;}
-#clockdiv > div{    padding: 10px;    border-radius: 3px;    background: #00BF96;    display: inline-block;}
-#clockdiv div > span{    padding: 15px;    border-radius: 3px;    background: #00816A;    display: inline-block;}
-.smalltext{    padding-top: 5px;    font-size: 16px;}
+    background: #689968;
+    color: white !important;
+}
+.sunday{
+    padding: 50px;
+    background: #C6EFC6;    
+}
+.monday{
+    padding: 50px;
+    background: #C6EFC6;    
+}
+.trs{
+    padding: 50px;
+    background: #C6EFC6;
+}
+.wednesday{
+    padding: 50px;
+    background: #C6EFC6;
+}
+.friday{
+    padding: 50px;
+    background: #C6EFC6;    
+}
+input[type=checkbox] + label {
+    padding: 10px;
+    font-size: 20pt;
+    font-variant-caps: all-petite-caps;
+} 
+input[type=checkbox]:checked + label {
+    display: none;
+} 
+h1{
+    padding-top: 50px;
+    padding-bottom:50px;
+    padding-left: 100px;
+    padding-right:100px;
+    text-align: center;
+}
+hr{
+    border-color: #689968 !important;
+}
