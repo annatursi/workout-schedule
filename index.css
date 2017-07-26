@@ -39,7 +39,7 @@ body{
 input[type=checkbox] + label {
     font-size: 30pt;
     position: relative;
-    line-height: 80px;
+    vertical-alignment: 30%;
     font-variant-caps: all-petite-caps;
 } 
 input[type=checkbox]:checked + label {
