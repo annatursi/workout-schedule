@@ -222,4 +222,5 @@ function pickRandom()
             week = "w24";
         else
             week = "f13";
+    return week;
 }
