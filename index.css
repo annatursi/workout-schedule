@@ -11,6 +11,11 @@ body{
     background: #689968;
     color: white !important;
 }
+.footer{
+    background: #689968;    
+    color: white !important;
+    font-size: 10pt;
+}    
 .sunday{
     padding: 50px;
     background: #C6EFC6;    
