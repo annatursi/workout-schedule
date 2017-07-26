@@ -1,15 +1,211 @@
+function getToday()
+{
+    today="Today is "
+    var d = new Date();
+    d = d.toDateString();
+    today = today.concat(d);
+    return today;
+}
+
 function decideWeek()
 {
   month = new Date().getMonth()+1;
-  date = new Date().getDate();
-  var line = "Today's date is: "
-if(date>=1&&date<=10)
-{var week= line.concat(date);}
-  else if(date>10&&date<=20)
-  {var week="Goodbye";}
-  else if(date>20&&date<=31&&month==7)
-  {var week="Correct!!";}
-  else
-  {var week="Else Statement.";}
-  return week;
+  day = new Date().getDate();
+if(month==1)
+    {
+        if(day<=5)
+            week="Week 8";
+        else if(day>=8&&day<=12)
+            week="Week 9";
+        else if(day>=15&&day<=19)
+            week="Week 10";
+        else if(day>=22&&day<=26)
+            week="Week 11";
+        else if(day>=29)
+            week="Week 12";
+        else{week=""}
+    }
+else if(month==2)
+    {
+        if(day<=2)
+            week="Week 12";
+        else if(day>=5&&day<=9)
+            week="Week 1";
+        else if(day>=12&&day<=16)
+            week="Week 2";
+        else if(day>=19&&day<=23)
+            week="Week 3";
+        else if(day>=26)
+            week="Week 4";
+        else{week=""}
+    }
+else if(month==3)
+    {
+        if(day<=2)
+            week="Week 4";
+        else if(day>=5&&day<=9)
+            week="Week 5";
+        else if(day>=12&&day<=16)
+            week="Week 6";
+        else if(day>=19&&day<=23)
+            week="Week 7";
+        else if(day>=26&&day<=30)
+            week="Week 8";
+        else{week=""}
+    }
+else if(month==4)
+    {
+        if(day>=2&&day<=6)
+            week="Week 9";
+        else if(day>=9&&day<=13)
+            week="Week 10";
+        else if(day>=16&&day<=20)
+            week="Week 11";
+        else if(day>=23&&day<=27)
+            week="Week 12";
+        else if(day>=30)
+            week="Week 1";
+        else{week=""}
+    }
+else if(month==5)
+    {
+        if(day<=4)
+            week="Week 1";
+        else if(day>=7&&day<=11)
+            week="Week 2";
+        else{week=""}
+    }
+else if(month==6)
+    {
+        {week=""}
+    }
+else if(month==7)
+    {
+        {week=""}
+    }
+else if(month==8)
+    {
+        if(day>=21&&day<=25)
+            week="Week 1";
+        else if(day>=28)
+            week="Week 2";
+        else{week=""}
+    }
+else if(month==9)
+    {
+        if(day<=1)
+            week="Week 2";
+        else if(day>=4&&day<=8)
+            week="Week 3";
+        else if(day>=11&&day<=15)
+            week="Week 4";
+        else if(day>=18&&day<=22)
+            week="Week 5";
+        else if(day>=25&&day<=29)
+            week="Week 6";
+        else{week=""}
+    }
+else if(month==10)
+    {
+        if(day>=2&&day<=6)
+            week="Week 7";
+        else if(day>=9&&day<=13)
+            week="Week 8";
+        else if(day>=16&&day<=20)
+            week="Week 9";
+        else if(day>=23&&day<=27)
+            week="Week 10";
+        else if(day>=30)
+            week="Week 11";
+        else{week=""}
+    }
+else if(month==11)
+    {
+        if(day<=3)
+            week="Week 11";
+        else if(day>=6&&day<=10)
+            week="Week 12";
+        else if(day>=13&&day<=17)
+            week="Week 1";
+        else if(day>=20&&day<=24)
+            week="Week 2";
+        else if(day>=27)
+            week="Week 3";
+        else{week=""}
+    }
+else if(month==12)
+    {
+        if(day<=1)
+            week="Week 3";
+        else if(day>=4&&day<=8)
+            week="Week 4";
+        else if(day>=11&&day<=15)
+            week="Week 5";
+        else if(day>=25&&day<=29)
+            week="Week 6";
+        else{week="";}
+    }
+else{week="Error!"}
+return week;
+}
+
+function pickSchedule()
+{
+    week = decideWeek();
+    random = Math.floor(Math.random()*10);
+    day = new Date().getDay();
+    if(day==0)
+        {decide="su";}
+    else if(day==2||day==4||day==6)
+        {decide="trs";}
+    else if(day==1)
+        {
+            if(week.localeCompare("Week 1")==0||week.localeCompare("Week 3")==0)
+                {decide="m13";}
+            else if(week.localeCompare("Week 2")==0||week.localeCompare("Week 4")==0)
+                {decide="m24";}
+            else if(week.localeCompare("Week 5")==0||week.localeCompare("Week 7")==0)
+                {decide="m57";}
+            else if(week.localeCompare("Week 6")==0||week.localeCompare("Week 8")==0)
+                {decide="m68";}
+            else if(week.localeCompare("Week 9")==0||week.localeCompare("Week 11")==0)
+                {decide="m911";}
+            else if(week.localeCompare("Week 10")==0||week.localeCompare("Week 12")==0)
+                {decide="m1012";}
+            else{decide="su";}
+        }
+    else if(day==3)
+        {
+        if(week.localeCompare("Week 1")==0||week.localeCompare("Week 3")==0)
+            {decide="w13";}
+        else if(week.localeCompare("Week 2")==0||week.localeCompare("Week 4")==0)
+            {decide="w24";}
+        else if(week.localeCompare("Week 5")==0||week.localeCompare("Week 7")==0)
+            {decide="w57";}
+        else if(week.localeCompare("Week 6")==0||week.localeCompare("Week 8")==0)
+            {decide="w68";}
+        else if(week.localeCompare("Week 9")==0||week.localeCompare("Week 11")==0)
+            {decide="w911";}
+        else if(week.localeCompare("Week 10")==0||week.localeCompare("Week 12")==0)
+            {decide="w1012";}
+        else{decide="su";}
+        }
+        else if(day==5)
+        {
+           if(week.localeCompare("Week 1")==0||week.localeCompare("Week 3")==0)
+                {decide="f13";}
+            else if(week.localeCompare("Week 2")==0||week.localeCompare("Week 4")==0)
+                {decide="f24";}
+            else if(week.localeCompare("Week 5")==0||week.localeCompare("Week 7")==0)
+                {decide="f57";}
+            else if(week.localeCompare("Week 6")==0||week.localeCompare("Week 8")==0)
+                {decide="f68";}
+            else if(week.localeCompare("Week 9")==0||week.localeCompare("Week 11")==0)
+                {decide="f911";}
+            else if(week.localeCompare("Week 10")==0||week.localeCompare("Week 12")==0)
+                {decide="f1012";}
+            else{decide="su";}
+        }
+
+    return decide;
 }
