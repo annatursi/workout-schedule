@@ -152,7 +152,6 @@ return week;
 function pickSchedule()
 {
     week = decideWeek();
-    random = Math.floor(Math.random()*10);
     day = new Date().getDay();
     if(day==0)
         {decide="su";}
@@ -208,4 +207,19 @@ function pickSchedule()
         }
 
     return decide;
+}
+
+function pickRandom()
+{
+        random = Math.floor(Math.random()*10);
+        if(random<3)
+            week = "m13";
+        else if(random>=3&&random<=5)
+            week = "m24";
+        else if(random>5&&random<=7)
+            week = "w13";
+        else if(random>7&&random<=10)
+            week = "w24";
+        else
+            week = "f13";
 }
