@@ -38,7 +38,7 @@ body{
 }
 input[type=checkbox] + label {
     padding: 10px;
-    font-size: 60pt;
+    font-size: 50pt;
         position: relative;
     vertical-align: middle;
     font-variant-caps: all-petite-caps;
