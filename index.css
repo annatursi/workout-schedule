@@ -37,7 +37,7 @@ body{
     background: #C6EFC6;    
 }
 input[type=checkbox] + label {
-    font-size: 30pt;
+    font-size: 35pt;
     position: relative;
     vertical-align: 35%;
     font-variant-caps: all-petite-caps;
@@ -49,7 +49,7 @@ input[type='checkbox'] {
     -webkit-appearance:none;
     width:80px;
     height:80px;
-    background:green;
+    background:white;
     border-radius:10px;
     border:2px solid #555;
 }
