@@ -171,7 +171,7 @@ function pickSchedule()
                 {decide="m911";}
             else if(week.localeCompare("Week 10")==0||week.localeCompare("Week 12")==0)
                 {decide="m1012";}
-            else{decide="su";}
+            else{decide=pickRandom();}
         }
     else if(day==3)
         {
@@ -187,7 +187,7 @@ function pickSchedule()
             {decide="w911";}
         else if(week.localeCompare("Week 10")==0||week.localeCompare("Week 12")==0)
             {decide="w1012";}
-        else{decide="su";}
+        else{decide=pickRandom();}
         }
         else if(day==5)
         {
@@ -203,7 +203,7 @@ function pickSchedule()
                 {decide="f911";}
             else if(week.localeCompare("Week 10")==0||week.localeCompare("Week 12")==0)
                 {decide="f1012";}
-            else{decide="su";}
+            else{decide=pickRandom();}
         }
 
     return decide;
