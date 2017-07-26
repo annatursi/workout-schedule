@@ -37,9 +37,9 @@ body{
     background: #C6EFC6;    
 }
 input[type=checkbox] + label {
-    font-size: 50pt;
+    font-size: 30pt;
     position: relative;
-    vertical-align: text-bottom;
+    line-height: 80px;
     font-variant-caps: all-petite-caps;
 } 
 input[type=checkbox]:checked + label {
