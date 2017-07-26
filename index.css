@@ -10,11 +10,13 @@ body{
 .header{
     background: #689968;
     color: white !important;
+    text-align: center;
 }
 .footer{
     background: #689968;    
     color: white !important;
-    font-size: 10pt;
+    font-size: 8pt;
+    text-align: center;
 }    
 .sunday{
     padding: 50px;
@@ -49,7 +51,6 @@ h1{
     padding-bottom:50px;
     padding-left: 100px;
     padding-right:100px;
-    text-align: center;
 }
 hr{
     border-color: #689968 !important;
