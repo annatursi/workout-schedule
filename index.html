@@ -21,22 +21,6 @@
     <div class="jumbotron"><div class="header"><div class="container">
       <h1 id="date"></h1>
       <h1 id ="weeks" style="display:none"></h1>
-        
-    <script>
-     document.getElementById("date").innerHTML = getToday();
-      var w = decideWeek();
-    if (w.localeCompare("")!==0)
-        {
-            document.getElementById("weeks").style.display='block';    
-            document.getElementById("weeks").innerHTML = w;
-        }
-    else
-    {
-      document.getElementById("weeks").style.display='block';
-      document.getElementById("weeks").innerHTML = "Random Workout";
-      document.getElementById(pickRandom()).style.display='block';
-    }
-    </script>
     </div></div></div>  
       
     <!--Schedules-->  
@@ -741,9 +725,21 @@
 
     </div></div></div>
 
-    <script>
-        decide = pickSchedule();
+    <script>     
+      document.getElementById("date").innerHTML = getToday();      
+      var w = decideWeek();    
+      if (w.localeCompare("")!==0)        
+      {            
+        document.getElementById("weeks").style.display='block';                
+        document.getElementById("weeks").innerHTML = w; 
+        decide = pickSchedule();       
         document.getElementById(decide).style.display='block';
+      }    else    
+      {      
+        document.getElementById("weeks").style.display='block';      
+        document.getElementById("weeks").innerHTML = "Random Workout";      
+        document.getElementById(pickRandom()).style.display='block';    
+      }
     </script>
     
  <div class="jumbotron"><div class="footer"><div class="container">      
