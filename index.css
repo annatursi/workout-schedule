@@ -1,5 +1,7 @@
 body{
     font: "Proxima Nova",Georgia,sans-serif;
+    width:100% !important;  
+    line-height: 2 !important;
 }
 .jumbotron{
     margin: 0px;
