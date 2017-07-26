@@ -47,8 +47,6 @@ input[type=checkbox]:checked + label {
 h1, h2{
     padding-top: 50px;
     padding-bottom:50px;
-    padding-left: 100px;
-    padding-right:100px;
 }
 hr{
     border-color: #689968 !important;
