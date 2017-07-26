@@ -17,27 +17,26 @@ body{
     text-align: center !important;
 }    
 .sunday{
-    padding: 50px;
+    padding: 20px;
     background: #C6EFC6;    
 }
 .monday{
-    padding: 50px;
+    padding: 20px;
     background: #C6EFC6;    
 }
 .trs{
-    padding: 50px;
+    padding: 20px;
     background: #C6EFC6;
 }
 .wednesday{
-    padding: 50px;
+    padding: 20px;
     background: #C6EFC6;
 }
 .friday{
-    padding: 50px;
+    padding: 20px;
     background: #C6EFC6;    
 }
 input[type=checkbox] + label {
-    padding: 10px;
     font-size: 50pt;
         position: relative;
     vertical-align: middle;
@@ -51,7 +50,7 @@ input[type='checkbox'] {
     width:100px;
     height:100px;
     background:white;
-    border-radius:5px;
+    border-radius:10px;
     border:2px solid #555;
 }
 input[type='checkbox']:checked {
