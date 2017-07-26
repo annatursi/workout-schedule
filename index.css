@@ -12,11 +12,9 @@ body{
     color: white !important;
     text-align: center;
 }
-.footer{
-    background: #689968;    
-    color: white !important;
-    font-size: 8pt;
-    text-align: center;
+.footer{   
+    font-size: 8pt !important;
+    text-align: center !important;
 }    
 .sunday{
     padding: 50px;
