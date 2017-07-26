@@ -38,7 +38,7 @@ body{
 }
 input[type=checkbox] + label {
     padding: 10px;
-    font-size: 20pt;
+    font-size: 60pt;
     font-variant-caps: all-petite-caps;
 } 
 input[type=checkbox]:checked + label {
