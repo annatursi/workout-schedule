@@ -17,50 +17,728 @@
   </head>
   
   <body> 
-    <div class="jumbotron"><div class="header"><div class="container">
-      <h1 id="date"></h1>
-      <h1 id ="weeks"></h1>
+    <!--Header-->
+    <div class="jumbotron"><div class="header"><div class="container">
+      <h1 id="date"></h1>
+      <h1 id ="weeks" style="display:none"></h1>
+        
     <script>
-      today="Today is "
-      var d = new Date();
-      d = d.toDateString();
-      today = today.concat(d)
-      document.getElementById("date").innerHTML = today;
+     document.getElementById("date").innerHTML = getToday();
       var w = decideWeek();
-      w = w.toString();
-      document.getElementById("weeks").innerHTML = w;
+    if (w.localeCompare("")!==0)
+        {
+            document.getElementById("weeks").style.display='block';    
+            document.getElementById("weeks").innerHTML = w;
+        }
     </script>
-    </div></div></div>  
-        <div class="jumbotron" id="su" style="display:none"><div class="white"><div class="container">      
-          <h1>Off Day!</h1>  
-        </div></div></div>
-    <!--monday-->
-      <p id="m13" style="display:none">m13</p>
-      <p id="m24" style="display:none">m24</p>
-     <p id="m57" style="display:none">m57</p>
-      <p id="m68" style="display:none">m68</p>
-      <p id="m911" style="display:none">m911</p>
-      <p id="m1012" style="display:none">m1012</p>
-    <!--tuesday & thursday & saturday-->
-      <p id="trs" style="display:none">Tuesday/Thursday/Saturday Workout</p>
-    <!--wednesday-->
-      <p id="w13" style="display:none">w13</p>
-      <p id="w24" style="display:none">w24</p>
-      <p id="w57" style="display:none">w57</p>
-      <p id="w68" style="display:none">w68</p>
-      <p id="w911" style="display:none">w911</p>
-      <p id="w1012" style="display:none">w1012</p> 
-    <!--friday-->
-      <p id="f13" style="display:none">f13</p>
-      <p id="f24" style="display:none">f24</p>
-      <p id="f57" style="display:none">f57</p>
-      <p id="f68" style="display:none">f68</p>
-      <p id="f911" style="display:none">f911</p>
-      <p id="f1012" style="display:none">f1012</p>
-                                        
+    </div></div></div>  
+      
+    <!--Schedules-->  
+    <!--sunday-->
+    <div class="jumbotron" id="su" style="display:none"><div class="sunday"><div class="container"> 
+          <h1>You have the day off!</h1>  
+    </div></div></div>
+    <!--monday-->
+    <div class="jumbotron" id="m13" style="display:none"><div class="monday"><div class="container"> 
+                
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Jump Squats</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Squats</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  24 Walking Lunges</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  24 Knee Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  16 X Jumps</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  10 Burpees</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  24 Weighted Step Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Medicine Ball Squat & Press</label> <br> 
+         
+        <hr>
+        
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Jump Squats</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Squats</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  24 Walking Lunges</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  24 Knee Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  16 X Jumps</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  10 Burpees</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  24 Weighted Step Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Medicine Ball Squat & Press</label> <br>
+    </div></div></div>
+    <div class="jumbotron" id="m24" style="display:none"><div class="monday"><div class="container"> 
+        
+        <input type="checkbox" name="1"> 
+        <label for="1">  10 Burpees</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Jump Lunges</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  24 Knee Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Sumo Squats</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  2 Minutes Skipping</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  24 Walking Lunges</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  30 Raised Reverse Lunges</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Jump Squats</label> <br> 
+         
+        <hr>
+        
+        <input type="checkbox" name="1"> 
+        <label for="1">  10 Burpees</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Jump Lunges</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  24 Knee Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Sumo Squats</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  2 Minutes Skipping</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  24 Walking Lunges</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  30 Raised Reverse Lunges</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Jump Squats</label> <br> 
+
+    </div></div></div>
+    <div class="jumbotron" id="m57" style="display:none"><div class="monday"><div class="container"> 
+        
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Sumo Jump Squats</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Weighted Wide Squats on Bench</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Burpees</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  30 Weighted Step Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  30 Jump Lunges</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Medicine Ball Crab Walk</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  24 Weighted Walking Lunges</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  2 Minutes Skipping</label> <br> 
+        
+        <hr>
+        
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Sumo Jump Squats</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Weighted Wide Squats on Bench</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Burpees</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  30 Weighted Step Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  30 Jump Lunges</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Medicine Ball Crab Walk</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  24 Weighted Walking Lunges</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  2 Minutes Skipping</label> <br> 
+    </div></div></div>
+    <div class="jumbotron" id="m68" style="display:none"><div class="monday"><div class="container"> 
+        
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Drop Push Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  1 Minute Plank</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Tricep Dips</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  25 Bent Leg Raises with Hip Lift</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Leg Raises with Hip Raise</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Weighted Squat Clean & Press</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Raised Leg Sit Ups with Twist</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Leg Raises</label> <br> 
+        
+        <hr>
+        
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Drop Push Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  1 Minute Plank</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Tricep Dips</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  25 Bent Leg Raises with Hip Lift</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Leg Raises with Hip Raise</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Weighted Squat Clean & Press</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Raised Leg Sit Ups with Twist</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Leg Raises</label> <br> 
+ 
+    </div></div></div>
+    <div class="jumbotron" id="m911" style="display:none"><div class="monday"><div class="container"> 
+                <input type="checkbox" name="1"> 
+        <label for="1">  50 Jump Lunges</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Split Squats</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 180 Degree Jump Squats</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Medicine Ball Full Squat & Press</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 X Hops</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  30 Knee Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Double Bench Jumps</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  24 Snap Jump Knee Ups</label> <br> 
+        
+        <hr>
+                
+        <input type="checkbox" name="1"> 
+        <label for="1">  50 Jump Lunges</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Split Squats</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 180 Degree Jump Squats</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Medicine Ball Full Squat & Press</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 X Hops</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  30 Knee Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Double Bench Jumps</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  24 Snap Jump Knee Ups</label> <br>
+        
+    </div></div></div>
+    <div class="jumbotron" id="m1012" style="display:none"><div class="monday"><div class="container"> 
+        
+        <input type="checkbox" name="1"> 
+        <label for="1">  30 Weighted Step Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Double Bench Jumps</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Medicine Ball Crab Walks</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Split Jumps</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Burpee Bench Jumps</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Medicine Ball Squat & Press</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  24 180 Degree Jump Squats</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  30 X Jumps</label> <br> 
+         
+        <hr>
+        
+        <input type="checkbox" name="1"> 
+        <label for="1">  30 Weighted Step Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Double Bench Jumps</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Medicine Ball Crab Walks</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Split Jumps</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Burpee Bench Jumps</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Medicine Ball Squat & Press</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  24 180 Degree Jump Squats</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  30 X Jumps</label> <br>         
+        
+    </div></div></div> 
+    <!--tuesday & thursday & saturday-->
+    <div class="jumbotron" id="trs" style="display:none"><div class="trs"><div class="container"> 
+        <input type="checkbox" name="1"> 
+        <label for="1">  Run 2 Miles</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  1 Minute of Push Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  1 Minute of Sit Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  Sprint 3/4 of a Mile</label> <br>  
+    </div></div></div>
+    <!--wednesday-->
+    <div class="jumbotron" id="w13" style="display:none"><div class="wednesday"><div class="container"> 
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Push Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Medicine Ball Squat & Press</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Lay Down Push Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Tricep Dips</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  40 Mountain Climbers</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  40 Ab Bikes</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  30 Sit Ups With Twist</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Straight Leg Sit Ups</label> <br>
+        
+        <hr>
+        
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Push Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Medicine Ball Squat & Press</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Lay Down Push Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Tricep Dips</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  40 Mountain Climbers</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  40 Ab Bikes</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  30 Sit Ups With Twist</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Straight Leg Sit Ups</label> <br>
+    </div></div></div>
+    <div class="jumbotron" id="w24" style="display:none"><div class="wednesday"><div class="container"> 
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Weighted Squat Clean & Press</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Tricep Dips</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  24 Commandos</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Straight Leg Jackknife</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Sit Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 4 Mountain Climbers + 1 Pushup</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Leg Raises</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Lay Down Push Ups</label> <br>
+        
+          <hr>
+          
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Weighted Squat Clean & Press</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Tricep Dips</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  24 Commandos</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Straight Leg Jackknife</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Sit Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 4 Mountain Climbers + 1 Pushup</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Leg Raises</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Lay Down Push Ups</label> <br>
+    </div></div></div>
+    <div class="jumbotron" id="w57" style="display:none"><div class="wednesday"><div class="container"> 
+        <input type="checkbox" name="1"> 
+        <label for="1">  8 10 Mountain Climbers + 2 Push Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Leg Raise With Hip Raise</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Laydown Push Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Weighted Bent Leg Jackknifes</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Weighted Squat Clean & Press</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Decline Push Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Tricep Dips</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  24 Commandos</label> <br> 
+        
+          <hr>
+        
+        <input type="checkbox" name="1"> 
+        <label for="1">  8 10 Mountain Climbers + 2 Push Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Leg Raise With Hip Raise</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Laydown Push Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Weighted Bent Leg Jackknifes</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Weighted Squat Clean & Press</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Decline Push Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Tricep Dips</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  24 Commandos</label> <br> 
+    </div></div></div>
+    <div class="jumbotron" id="w68" style="display:none"><div class="wednesday"><div class="container"> 
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Snap Jumps</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Straight Leg Jackknifes</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  2 Minutes Skipping</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  40 Ab Bikes</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Burpees</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  50 Mountain Climbers</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  40 Scissor Kicks</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 X Jumps</label> <br> 
+          
+        <hr>
+          
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Snap Jumps</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Straight Leg Jackknifes</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  2 Minutes Skipping</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  40 Ab Bikes</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Burpees</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  50 Mountain Climbers</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  40 Scissor Kicks</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 X Jumps</label> <br> 
+    </div></div></div>
+    <div class="jumbotron" id="w911" style="display:none"><div class="wednesday"><div class="container"> 
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Drop Push Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Medicine Ball Squats & Press</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  25 Tricep Dips</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  8 10 Mountain Climbers + 2 Push Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Broad Jump Burpees</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Weighted Squat Clean & Press</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Decline Push Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Bosu Burpees</label> <br> 
+          
+        <hr>
+          
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Drop Push Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Medicine Ball Squats & Press</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  25 Tricep Dips</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  8 10 Mountain Climbers + 2 Push Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Broad Jump Burpees</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Weighted Squat Clean & Press</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Decline Push Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Bosu Burpees</label> <br> 
+    </div></div></div>
+    <div class="jumbotron" id="w1012" style="display:none"><div class="wednesday"><div class="container"> 
+                  
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Weighted Squat Clean & Press</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  36 Commandos</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Laydown Push Ups with Tuck Jumps</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Decline Push Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  24 Spider Push Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  30 Tricep Dips</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Bosu Burpees</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Split Leg Push Ups</label> <br> 
+          
+        <hr>
+
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Weighted Squat Clean & Press</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  36 Commandos</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Laydown Push Ups with Tuck Jumps</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Decline Push Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  24 Spider Push Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  30 Tricep Dips</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Bosu Burpees</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Split Leg Push Ups</label> <br> 
+          </div></div></div>
+    <!--friday-->
+    <div class="jumbotron" id="f13" style="display:none"><div class="friday"><div class="container"> 
+                <input type="checkbox" name="1"> 
+        <label for="1">  15 Medicine Ball Squat & Press</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  30 Knee Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  40 Ab Bikes</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  24 Walking Lunges</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  10 Burpees</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Straight Leg Sit Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  30 Weighted Step Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Push Ups</label> <br> 
+        
+            <hr>
+        
+                <input type="checkbox" name="1"> 
+        <label for="1">  15 Medicine Ball Squat & Press</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  30 Knee Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  40 Ab Bikes</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  24 Walking Lunges</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  10 Burpees</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Straight Leg Sit Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  30 Weighted Step Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Push Ups</label> <br> 
+
+    </div></div></div>
+    <div class="jumbotron" id="f24" style="display:none"><div class="friday"><div class="container"> 
+                <input type="checkbox" name="1"> 
+        <label for="1">  15 Burpees</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  30 Jump Lunges</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Lay Down Push Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Sumo Squats</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 4 Mountain Climbers + 1 Push Up</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Straight Leg Jackknifes</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  2 Minutes Skipping</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  24 Commandos</label> <br> 
+        
+            <hr>
+        
+                <input type="checkbox" name="1"> 
+        <label for="1">  15 Burpees</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  30 Jump Lunges</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Lay Down Push Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Sumo Squats</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 4 Mountain Climbers + 1 Push Up</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Straight Leg Jackknifes</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  2 Minutes Skipping</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  24 Commandos</label> <br> 
+    </div></div></div>
+    <div class="jumbotron" id="f57" style="display:none"><div class="friday"><div class="container"> 
+                
+        <input type="checkbox" name="1"> 
+        <label for="1">  50 Mountain Climbers</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Weighted Bent Leg Jackknives</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  3 Minutes Skipping</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Straight Leg Jackknives</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Burpees</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  30 Raised Leg Sit Ups with Twist</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  40 Ab Bikes</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Leg Raises</label> <br> 
+         
+            <hr>
+        
+                <input type="checkbox" name="1"> 
+        <label for="1">  50 Mountain Climbers</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Weighted Bent Leg Jackknives</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  3 Minutes Skipping</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Straight Leg Jackknives</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Burpees</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  30 Raised Leg Sit Ups with Twist</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  40 Ab Bikes</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Leg Raises</label> <br>
+ 
+    </div></div></div>
+    <div class="jumbotron" id="f68" style="display:none"><div class="friday"><div class="container"> 
+                <input type="checkbox" name="1"> 
+        <label for="1">  30 X Jumps</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  30 Weighted Step Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  40 Jump Lunges</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Tuck Jumps</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Sumo Jump Squats</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Split Squats</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  24 Weighted Walking Lunges</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Broad Jump Burpees</label> <br> 
+        
+        <hr>
+        
+        <input type="checkbox" name="1"> 
+        <label for="1">  30 X Jumps</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  30 Weighted Step Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  40 Jump Lunges</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Tuck Jumps</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Sumo Jump Squats</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Split Squats</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  24 Weighted Walking Lunges</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Broad Jump Burpees</label> <br> 
+        
+    </div></div></div>
+    <div class="jumbotron" id="f911" style="display:none"><div class="friday"><div class="container"> 
+                <input type="checkbox" name="1"> 
+        <label for="1">  20 Leg Raises with Hip Raises</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Straight Leg Jackknives</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  50 Mountain Climbers</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Ab Bikes</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  30 Bench Hops</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Weighted Bent Leg Jackknives</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Leg Raises on Bench</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  30 Raised Leg Sit Ups with Twist</label> <br> 
+        
+        <hr>
+        
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Leg Raises with Hip Raises</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Straight Leg Jackknives</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  50 Mountain Climbers</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Ab Bikes</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  30 Bench Hops</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Weighted Bent Leg Jackknives</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Leg Raises on Bench</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  30 Raised Leg Sit Ups with Twist</label> <br> 
+
+    </div></div></div>
+    <div class="jumbotron" id="f1012" style="display:none"><div class="friday"><div class="container"> 
+                <input type="checkbox" name="1"> 
+        <label for="1">  50 Snap Jumps</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  16 Spider Push Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  40 Scissor Kicks</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  30 Bench Hops</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Leg Raises on Bench</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Straight Leg Jackknifes</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Weighted Bent Leg Jackknifes</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Burpee Bench Jump</label> <br> 
+        
+            <hr>
+        
+        <input type="checkbox" name="1"> 
+        <label for="1">  50 Snap Jumps</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  16 Spider Push Ups</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  40 Scissor Kicks</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  30 Bench Hops</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Leg Raises on Bench</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Straight Leg Jackknifes</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  20 Weighted Bent Leg Jackknifes</label> <br>
+        <input type="checkbox" name="1"> 
+        <label for="1">  15 Burpee Bench Jump</label> <br> 
+
+    </div></div></div>
+
     <script>
-decide="su";
-document.getElementById(decide).style.display='block';
-</script>
+        decide = pickSchedule();
+        document.getElementById(decide).style.display='block';
+    </script>
+
     </body>
     </html>
