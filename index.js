@@ -235,7 +235,6 @@ function _timer(callback)
     // this will start the timer ex. start the timer with 1 second interval timer.start(1000) 
     this.start = function(interval)
     {
-        mode = 1;
         interval = (typeof(interval) !== 'undefined') ? interval : 1000;
  
         if(status == 0)
@@ -243,6 +242,18 @@ function _timer(callback)
             status = 1;
             timer_id = setInterval(function()
             {
+                switch(mode)
+                {
+                    default:
+                    if(time)
+                    {
+                        time--;
+                        generateTime();
+                        if(typeof(callback) === 'function') callback(time);
+                    }
+                    break;
+                    
+                    case 1:
                     if(time < 86400)
                     {
                         time++;
@@ -313,3 +324,23 @@ function _timer(callback)
         $('div.timer span.hour').html(hour);
     }
 }
+ 
+// example use
+var timer;
+ 
+$(document).ready(function(e) 
+{
+    timer = new _timer
+    (
+        function(time)
+        {
+            if(time == 0)
+            {
+                timer.stop();
+                alert('time out');
+            }
+        }
+    );
+    timer.reset(0);
+    timer.mode(0);
+});
