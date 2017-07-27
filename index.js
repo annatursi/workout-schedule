@@ -284,12 +284,6 @@ function _timer(callback)
         generateTime(time);
     }
     
-    // Change the mode of the timer, count-up (1) or countdown (0)
-    this.mode = function(tmode)
-    {
-        mode = tmode;
-    }
-    
     // This methode return the current value of the timer
     this.getTime = function()
     {
@@ -313,14 +307,11 @@ function _timer(callback)
     {
         var second = time % 60;
         var minute = Math.floor(time / 60) % 60;
-        var hour = Math.floor(time / 3600) % 60;
         
         second = (second < 10) ? '0'+second : second;
         minute = (minute < 10) ? '0'+minute : minute;
-        hour = (hour < 10) ? '0'+hour : hour;
         
         $('div.timer span.second').html(second);
         $('div.timer span.minute').html(minute);
-        $('div.timer span.hour').html(hour);
     }
 }
