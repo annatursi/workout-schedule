@@ -324,23 +324,3 @@ function _timer(callback)
         $('div.timer span.hour').html(hour);
     }
 }
- 
-// example use
-var timer;
- 
-$(document).ready(function(e) 
-{
-    timer = new _timer
-    (
-        function(time)
-        {
-            if(time == 0)
-            {
-                timer.stop();
-                alert('time out');
-            }
-        }
-    );
-    timer.reset(0);
-    timer.mode(0);
-});
