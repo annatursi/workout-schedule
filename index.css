@@ -67,5 +67,6 @@ div.timer {
     line-height:50px;
     font-size:36px;
     text-align:center;
-    margin:5px;
+    margin: 0px;
+    padding: 0px;
 }
