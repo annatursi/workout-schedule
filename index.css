@@ -21,16 +21,16 @@ body{
     background: #C6EFC6;    
 }
 .monday{
-    background: #C6EFC6;    
+    background: #ffff99;    
 }
 .trs{
     background: #C6EFC6;
 }
 .wednesday{
-    background: #C6EFC6;
+    background: #ffff99;
 }
 .friday{
-    background: #C6EFC6;    
+    background: #ffff99;    
 }
 input[type=checkbox] + label {
     font-size: 35pt;
