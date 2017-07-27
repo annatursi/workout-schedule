@@ -4,7 +4,7 @@ body{
     line-height: 2 !important;
 }
 .jumbotron{
-    margin: 0px;
+    margin: 0px !important;
     padding: 0px;
 }
 .header{
@@ -17,23 +17,18 @@ body{
     text-align: center !important;
 }    
 .sunday{
-    padding: 20px;
     background: #C6EFC6;    
 }
 .monday{
-    padding: 20px;
     background: #C6EFC6;    
 }
 .trs{
-    padding: 20px;
     background: #C6EFC6;
 }
 .wednesday{
-    padding: 20px;
     background: #C6EFC6;
 }
 .friday{
-    padding: 20px;
     background: #C6EFC6;    
 }
 input[type=checkbox] + label {
