@@ -243,18 +243,6 @@ function _timer(callback)
             status = 1;
             timer_id = setInterval(function()
             {
-                switch(mode)
-                {
-                    default:
-                    if(time)
-                    {
-                        time--;
-                        generateTime();
-                        if(typeof(callback) === 'function') callback(time);
-                    }
-                    break;
-                    
-                    case 1:
                     if(time < 86400)
                     {
                         time++;
