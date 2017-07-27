@@ -284,6 +284,14 @@ function _timer(callback)
         generateTime(time);
     }
     
+    this.mode = function(tmode)
+		
+  {
+		
+      mode = tmode;
+		
+   }
+    
     // This methode return the current value of the timer
     this.getTime = function()
     {
