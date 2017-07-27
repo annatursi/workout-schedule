@@ -10,6 +10,7 @@
     <!-- Latest compiled and minified JavaScript -->      
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>                      
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
     <!--Custom JavaScript-->
     <script src="index.js" type="text/javascript"></script>
     <!-- Custom stylesheet -->
@@ -23,10 +24,16 @@
       <h1 id ="weeks" style="display:none"></h1>
     </div></div></div>  
     
-    <input id="tst" />
-    <input type="button" name="" value="Start" onmouseup="timer.start('tst');" />
-    <input type="button" name="" value="Stop" onmouseup="timer.stop('tst');" />
-    <input type="button" name="" value="Continue" onmouseup="timer.tick('tst');" />
+    <div class="timer">
+      <span class="hour">00</span>:<span class="minute">00</span>:<span class="second">00</span>
+    </div>
+    <div class="control">
+      <button onClick="timer.start(1000)">Start</button> 
+      <button onClick="timer.stop()">Stop</button> 
+      <button onClick="timer.reset(60)">Reset</button> 
+      <button onClick="timer.mode(1)">Count up</button> 
+      <button onClick="timer.mode(0)">Count down</button>
+    </div>
       
     <!--Schedules-->  
     <!--sunday-->
