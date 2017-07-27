@@ -6,6 +6,7 @@ body{
 .jumbotron{
     margin: 0px !important;
     padding: 0px;
+    text-align: center;
 }
 .header{
     background: #689968;
@@ -67,6 +68,5 @@ div.timer {
     line-height:50px;
     font-size:36px;
     text-align:center;
-    margin: 0px;
-    padding: 0px;
+    margin: 5px;
 }
