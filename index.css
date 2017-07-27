@@ -52,6 +52,7 @@ input[type='checkbox'] {
     background:white;
     border-radius:10px;
     border:2px solid #555;
+    padding-right: 10px;
 }
 input[type='checkbox']:checked {
     background: #abd;
