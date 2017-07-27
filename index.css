@@ -15,6 +15,7 @@ body{
 .footer{   
     font-size: 8pt !important;
     text-align: center !important;
+    margin: 0 !important;
 }    
 .sunday{
     background: #C6EFC6;    
