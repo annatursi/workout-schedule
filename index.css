@@ -9,7 +9,7 @@ body{
     padding: 0px;
 }
 .header{
-    background: rgba(0, 0, 0, 1);    
+    background: rgba(46, 46, 46, 1);    
     text-align: center !important;
     color: rgba(173, 173, 173, 1) !important;
 }
@@ -47,11 +47,11 @@ input[type='checkbox']:checked {
     background: #abd;
 }
 h1, h2{
-    padding-top: 50px;
-    padding-bottom:50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 hr{
-    border-color: #689968 !important;
+    border-color: black !important;
 }
 
 div.timer {
