@@ -5,7 +5,7 @@ body{
 }
 .jumbotron{
     margin: 0px !important;
-    padding: 0px;
+    padding: 20px 0px 20px 0px;
     background: white !important;
 }
 .header{
@@ -49,8 +49,8 @@ input[type='checkbox']:checked {
     background: #abd;
 }
 h1, h2{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 hr{
     border-color: black !important;
