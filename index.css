@@ -5,7 +5,7 @@ body{
 }
 .jumbotron{
     padding: 0px !important;
-    margin: 20px 0px 20px 0px !important;
+    margin: 0px !important;
     background: white !important;
 }
 .header{
@@ -14,18 +14,23 @@ body{
     background: rgba(46, 46, 46, 1);    
     text-align: center !important;
     color: white !important;
+    padding: 20px 0px 20px 0px;
 }
 .monday{
-    background: rgba(211, 187, 221, .6)
+    background: rgba(211, 187, 221, .6);
+    padding: 20px 0px 20px 0px;
 }
 .trs{
     background: #C6EFC6;
+    padding: 20px 0px 20px 0px;
 }
 .wednesday{
     background: rgba(252, 132, 138, .7);
+    padding: 20px 0px 20px 0px;
 }
 .friday{
-    background: rgba(24, 157, 188, .6);    
+    background: rgba(24, 157, 188, .6);  
+    padding: 20px 0px 20px 0px;
 }
 input[type=checkbox] + label {
     font-size: 35pt;
