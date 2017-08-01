@@ -62,7 +62,7 @@ input[type='checkbox']:checked {
 h1, h2{
     padding-top: 5px;
     padding-bottom: 5px;
-    font: "Times New Roman" !important;
+    font: serif !important;
 }
 hr{
     border: none;
