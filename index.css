@@ -59,7 +59,7 @@ h1, h2{
 }
 hr{
     border: none;
-    height: 1px;
+    height: 3px;
     color: black !important;
     background-color: black !important;
 }
