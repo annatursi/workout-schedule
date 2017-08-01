@@ -9,9 +9,9 @@ body{
     background: white !important;
 }
 .header{
-    background: rgba(46, 46, 46, .75);    
+    background: rgba(46, 46, 46, 1);    
     text-align: center !important;
-    color: rgba(173, 173, 173, 1) !important;
+    color: white !important;
 }
 .monday{
     background: rgba(211, 187, 221, .6)
@@ -20,7 +20,7 @@ body{
     background: #C6EFC6;
 }
 .wednesday{
-    background: rgba(252, 132, 138, .6);
+    background: rgba(252, 132, 138, .7);
 }
 .friday{
     background: rgba(24, 157, 188, .6);    
