@@ -8,7 +8,7 @@ body{
     padding: 0px;
 }
 .header{
-    background: #666666;    
+    background: rgba(173, 173, 173, 1);    
 }
 .monday{
     background: rgba(211, 187, 221, 1)
