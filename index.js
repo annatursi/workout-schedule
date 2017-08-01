@@ -215,11 +215,11 @@ function pickRandom()
         if(random<3)
             week = "m13";
         else if(random>=3&&random<=5)
-            week = "m24";
+            week = "f13";
         else if(random>5&&random<=7)
             week = "w13";
         else if(random>7&&random<=10)
-            week = "w24";
+            week = "m24";
         else
             week = "f13";
     return week;
