@@ -1,6 +1,6 @@
 body{
     /*font: "Proxima Nova",Georgia,sans-serif;*/
-    font: serif;
+    font: serif !important;
     width:100% !important;  
     line-height: 2 !important;
 }
