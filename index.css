@@ -2,11 +2,11 @@ body{
     font: "Proxima Nova",Georgia,sans-serif;
     width:100% !important;  
     line-height: 2 !important;
-    background: rgba(173, 173, 173, .75);
 }
 .jumbotron{
     margin: 0px !important;
     padding: 0px;
+    background: white !important;
 }
 .header{
     background: rgba(46, 46, 46, 1);    
@@ -14,16 +14,16 @@ body{
     color: rgba(173, 173, 173, 1) !important;
 }
 .monday{
-    background: rgba(211, 187, 221, .75)
+    background: rgba(211, 187, 221, 1)
 }
 .trs{
     background: #C6EFC6;
 }
 .wednesday{
-    background: rgba(252, 132, 138, .75);
+    background: rgba(252, 132, 138, 1);
 }
 .friday{
-    background: #ffff99;    
+    background: rgba(24, 157, 188, 1);    
 }
 input[type=checkbox] + label {
     font-size: 35pt;
