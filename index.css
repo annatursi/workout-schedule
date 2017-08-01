@@ -9,8 +9,9 @@ body{
     padding: 0px;
 }
 .header{
-    background: rgba(0, 0, 0, .5);    
+    background: rgba(0, 0, 0, 1);    
     text-align: center !important;
+    color: rgba(173, 173, 173, 1) !important;
 }
 .monday{
     background: rgba(211, 187, 221, .75)
