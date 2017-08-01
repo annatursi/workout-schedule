@@ -239,6 +239,8 @@ function _timer(callback)
  
         if(status == 0)
         {
+            status = 1;
+            mode = 1;
             timer_id = setInterval(function()
             {
                 switch(mode)
