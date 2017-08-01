@@ -61,7 +61,7 @@ hr{
     border: none;
     height: 1px;
     color: black !important;
-    border-color: black !important;
+    background-color: black !important;
 }
 
 div.timer {
