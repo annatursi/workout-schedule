@@ -34,7 +34,7 @@ input[type=checkbox] + label {
     font-variant-caps: all-petite-caps;
 } 
 input[type=checkbox]:checked + label {
-    display: none;
+    text-decoration: line-through;
 } 
 input[type='checkbox'] {
     -webkit-appearance:none;
