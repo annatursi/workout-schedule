@@ -212,16 +212,16 @@ function pickSchedule()
 function pickRandom()
 {
         random = Math.floor(Math.random()*10);
-        if(random<3)
+        if(random<2.5)
             week = "m13";
-        else if(random>=3&&random<=5)
+        else if(random>=2.5&&random<=5)
             week = "f13";
-        else if(random>5&&random<=7)
+        else if(random>5&&random<=7.5)
             week = "w13";
-        else if(random>7&&random<=10)
-            week = "m24";
+        else if(random>7.5&&random<=10)
+            week = "trs";
         else
-            week = "f13";
+            week = "su";
     return week;
 }
 
