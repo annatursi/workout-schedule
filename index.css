@@ -9,6 +9,7 @@ body{
 }
 .header{
     background: rgba(173, 173, 173, 1);    
+    text-align: center !important;
 }
 .monday{
     background: rgba(211, 187, 221, 1)
