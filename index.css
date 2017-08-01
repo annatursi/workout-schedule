@@ -8,20 +8,7 @@ body{
     padding: 0px;
 }
 .header{
-    background: #999999;
-    color: white !important;
-    text-align: center;
-}
-.footer{   
-    font-size: 8pt !important;
-    text-align: center !important;
-    margin: 0 !important;
-}    
-.sunday{
-    background: #C6EFC6;    
-}
-.monday{
-    background: #ffff99;    
+    background: rgba(211, 187, 221, 1);    
 }
 .trs{
     background: #C6EFC6;
