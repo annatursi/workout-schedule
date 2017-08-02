@@ -111,5 +111,7 @@ div.timer, div.timer1 {
 div.control{
     margin: 5px;
     margin-top: 15px;
-    font-variant-caps: all-petite-caps;
+}
+.button{
+        font-variant-caps: all-petite-caps !important;
 }
