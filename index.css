@@ -1,5 +1,5 @@
 body{
-    /*font: "Proxima Nova",Georgia,sans-serif;*/
+    font: "Courier New",Georgia,sans-serif;
     font: serif !important;
     width:100% !important;  
     line-height: 2 !important;
@@ -10,7 +10,7 @@ body{
     background: white !important;
 }
 .header{
-    font: "Oleo Script", Helvetica, sans-serif !important;
+    /*font: "Oleo Script", Helvetica, sans-serif !important;*/
     background: rgba(46, 46, 46, 1);    
     text-align: center !important;
     color: white !important;
