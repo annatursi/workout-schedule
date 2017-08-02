@@ -1,6 +1,5 @@
 body{
-    font: "Courier New",Georgia,sans-serif;
-    font: serif !important;
+    font-family: "Courier New",Georgia,serif;
     width:100% !important;  
     line-height: 2 !important;
 }
