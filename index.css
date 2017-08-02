@@ -23,12 +23,6 @@ hr.top{
     color: white !important;
     background-color: white !important;
 }
-.footer{
-    background: rgba(46, 46, 46, 1);
-    text-align: center !important;
-    color: white !important;
-    padding: 0px 0px 20px 0px;
-}
 .monday{
     background: rgba(211, 187, 221, .6);
     padding: 40px 0px 40px 0px;
@@ -120,4 +114,14 @@ div.control{
 }
 .button{
         font-variant-caps: all-petite-caps !important;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background: rgba(46, 46, 46, 1);
+  text-align: center !important;
+  color: white !important;
+  padding: 0px 0px 20px 0px;
 }
