@@ -105,13 +105,17 @@ div.timer, div.timer1 {
     line-height:50px;
     font-size:36px;
     text-align:center;
-    margin: 5px;
+    margin: 10px;
+}
+
+.time{
+    width: 100%;
     display: inline-block;
 }
 
 div.control{
     margin: 5px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 .button{
         font-variant-caps: all-petite-caps !important;
