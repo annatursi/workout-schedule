@@ -16,6 +16,12 @@ body{
     color: white !important;
     padding: 20px 0px 20px 0px;
 }
+.header hr{
+    border: none;    
+    height: 2px;    
+    color: white !important;    
+    background-color: white !important;
+}
 .footer{
     background: rgba(46, 46, 46, 1);
     text-align: center !important;
