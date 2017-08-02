@@ -110,7 +110,7 @@ div.timer, div.timer1 {
 
 #time{
     width: 100%;
-    display: inline-block;
+    text-align: center !important;
 }
 
 div.control{
