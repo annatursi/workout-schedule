@@ -70,7 +70,7 @@ input[type=checkbox] + label {
     font-size: 35pt;
     position: relative;
     vertical-align: 32%;
-    font-variant-caps: all-petite-caps;
+    font-variant-caps: all-petite-caps !important;
 } 
 input[type=checkbox]:checked + label {
     text-decoration: line-through;
@@ -95,8 +95,8 @@ h1, h2{
 hr{
     border: none;
     height: 3px;
-    color: black !important;
-    background-color: black !important;
+    color: white !important;
+    background-color: white !important;
 }
 
 div.timer, div.timer1 {
@@ -114,10 +114,4 @@ div.control{
 }
 .button{
         font-variant-caps: all-petite-caps !important;
-}
-.top{    
-    border: none;       
-    height: 2px;        
-    color: white !important;        
-    background-color: white !important;
 }
