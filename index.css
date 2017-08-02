@@ -20,8 +20,8 @@ hr.top{
     width:60%;
     border: none;
     height: 3px;
-    color: white;
-    background-color: white;
+    color: white !important;
+    background-color: white !important;
 }
 .footer{
     background: rgba(46, 46, 46, 1);
@@ -97,13 +97,12 @@ input[type='checkbox']:checked {
 h1, h2{
     padding-top: 5px;
     padding-bottom: 5px;
-    font: serif !important;
 }
 hr{
     border: none;
     height: 3px;
-    color: black !important;
-    background-color: black !important;
+    color: black;
+    background-color: black;
 }
 
 div.timer, div.timer1 {
