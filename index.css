@@ -25,18 +25,23 @@ body{
     background: rgba(211, 187, 221, .6);
     padding: 40px 0px 40px 0px;
 }
+.monday input{
+}
 .trs{
     background: rgba(111, 195, 102, .6);
     padding: 40px 0px 40px 0px;
 }
+.trs input{}
 .wednesday{
     background: rgba(252, 132, 138, .7);
     padding: 40px 0px 40px 0px;
 }
+.wednesday input{}
 .friday{
     background: rgba(24, 157, 188, .6);  
     padding: 40px 0px 40px 0px;
 }
+.friday input{}
 input[type=checkbox] + label {
     font-size: 35pt;
     position: relative;
