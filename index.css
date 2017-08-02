@@ -95,8 +95,8 @@ h1, h2{
 hr{
     border: none;
     height: 3px;
-    color: white !important;
-    background-color: white !important;
+    color: black !important;
+    background-color: black !important;
 }
 
 div.timer, div.timer1 {
@@ -115,7 +115,7 @@ div.control{
 .button{
         font-variant-caps: all-petite-caps !important;
 }
-.header hr{    
+.top{    
     border: none;       
     height: 2px;        
     color: white !important;        
