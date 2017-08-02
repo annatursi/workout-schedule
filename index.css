@@ -2,6 +2,7 @@ body{
     font-family: "Lucida Sans Unicode","Lucida Grande",sans-serif;
     width:100% !important;  
     line-height: 2 !important;
+    color: rgba(46, 46, 46, 1);
 }
 .jumbotron{
     padding: 0px !important;
@@ -26,24 +27,45 @@ body{
     padding: 40px 0px 40px 0px;
 }
 .monday input{
+     background: rgba(24,  231, 243, 1);    
+     border:2px solid rgba(160, 109, 182, 1);
 }
 .monday input[type=checkbox]:checked{
+    background: rgba(173, 130, 192, 1);
 }
 .trs{
     background: rgba(111, 195, 102, .6);
     padding: 40px 0px 40px 0px;
 }
-.trs input{}
+.trs input{
+    background: rgba(214, 238, 211, 1);
+    border: 2px solid rgba(74, 165, 64, 1);
+}
+.trs input[type=checkbox]:checked{
+    background: rgba(114, 196, 104, 1);
+}
 .wednesday{
     background: rgba(252, 132, 138, .7);
     padding: 40px 0px 40px 0px;
 }
-.wednesday input{}
+.wednesday input{
+    background: rgba(254, 205, 208, 1);
+    border: 2px solid rgba(250, 66, 75, 1);
+}
+.wednesday input[type=checkbox]:checked{
+    background: rgba(251, 111, 118, 1);
+}
 .friday{
     background: rgba(24, 157, 188, .6);  
     padding: 40px 0px 40px 0px;
 }
-.friday input{}
+.friday input{
+    background: rgba(169, 230, 244, 1);
+    border: 2px solid rgba(26, 171, 203, 1);
+}
+.friday input[type=checkbox]:checked{
+    background: rgba(43, 194, 227, 1);
+}
 input[type=checkbox] + label {
     font-size: 35pt;
     position: relative;
