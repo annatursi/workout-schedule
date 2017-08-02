@@ -95,8 +95,8 @@ h1, h2{
 hr{
     border: none;
     height: 3px;
-    color: black !important;
-    background-color: black !important;
+    color: white !important;
+    background-color: white !important;
 }
 
 div.timer, div.timer1 {
