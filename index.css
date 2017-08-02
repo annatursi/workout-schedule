@@ -116,12 +116,10 @@ div.control{
         font-variant-caps: all-petite-caps !important;
 }
 .footer {
-  position: absolute;
   bottom: 0;
   width: 100%;
-  height: 60px;
+  height: 100px;
   background: rgba(46, 46, 46, 1);
   text-align: center !important;
   color: white !important;
-  padding: 0px 0px 20px 0px;
 }
