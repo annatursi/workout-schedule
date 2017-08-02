@@ -95,8 +95,8 @@ h1, h2{
 hr{
     border: none;
     height: 3px;
-    color: black;
-    background-color: black;
+    color: rgba(46, 46, 46, 1);
+    background-color: rgba(46, 46, 46, 1);
 }
 
 div.timer, div.timer1 {
@@ -123,5 +123,4 @@ div.control{
   height: 100px;
   background: white;
   text-align: center !important;
-  color: rgba(46, 46, 46, 1) !important;
 }
