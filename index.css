@@ -78,3 +78,8 @@ div.timer, div.timer1 {
     text-align:center;
     margin: 5px;
 }
+
+div.control{
+    margin: 5px;
+    font-variant-caps: all-petite-caps;
+}
