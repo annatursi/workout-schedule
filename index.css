@@ -106,6 +106,7 @@ div.timer, div.timer1 {
     font-size:36px;
     text-align:center;
     margin: 5px;
+    display: inline-block;
 }
 
 div.control{
