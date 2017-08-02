@@ -119,7 +119,7 @@ div.control{
   bottom: 0;
   width: 100%;
   height: 100px;
-  background: rgba(46, 46, 46, 1);
+  background: white;
   text-align: center !important;
-  color: white !important;
+  color: rgba(46, 46, 46, 1) !important;
 }
