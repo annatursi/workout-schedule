@@ -108,7 +108,7 @@ div.timer, div.timer1 {
     margin: 10px;
 }
 
-.time{
+#time{
     width: 100%;
     display: inline-block;
 }
