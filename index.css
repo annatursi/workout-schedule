@@ -111,7 +111,7 @@ div.control{
     margin: 5px;
     margin-top: 20px;
     width: 100%;
-    align: center;
+    text-align: center;
 }
 .button{
         font-variant-caps: all-petite-caps !important;
