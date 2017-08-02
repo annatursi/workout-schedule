@@ -27,6 +27,8 @@ body{
 }
 .monday input{
 }
+.monday input[type=checkbox]:checked{
+}
 .trs{
     background: rgba(111, 195, 102, .6);
     padding: 40px 0px 40px 0px;
